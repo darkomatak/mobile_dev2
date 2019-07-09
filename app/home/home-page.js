@@ -15,7 +15,9 @@ logic, and to set up your page’s data binding.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 var geolocation = require("nativescript-geolocation");
+var enums_1 = require("tns-core-modules/ui/enums"); // used to describe at what accuracy the location should be get
 var dialogs = require("tns-core-modules/ui/dialogs");
+
 
 
 
@@ -61,26 +63,31 @@ function onPageLoaded(args) {
   const TODAY = new Date();
   const myConnectionType = connectivityModule.getConnectionType();
 
+ 
+  geolocation.enableLocationRequest();
 
 
-  geolocation.isEnabled().then(function (isEnabled) {
-    if (!isEnabled) {
-      geolocation.enableLocationRequest().then(function () {
-      }, function (e) {
-        //console.log("Error: " + (e.message || e));
-      });
-    }
-  }, function (e) {
-    //console.log("Error: " + (e.message || e));
-  });
+
+
+geolocation.isEnabled().then(function (isLocationEnabled) {
+  if (!isLocationEnabled) {
+    geolocation.enableLocationRequest().then(function () {
+    }, function (e) {
+      console.log("Error: " + (e.message || e));
+    });
+  }
+}, function (e) {
+   console.log("Error: " + (e.message || e));
+});
+
+
 
 
 
 
   id = timerModule.setInterval(() => {
-    if (get_location() == true) {
-      //console.log(' unutar citanja intervala ' + global.x_location);
-    };
+    getLocation();
+    //console.log(' citanje lokacije ');
   }, 1000);
 
 
@@ -336,13 +343,13 @@ function onItemTap(args) {
   }
 
 
-  get_location();
 
-  if (get_location() == true) {
-    console.log(global.x_location);
-  };
 
-  console.log(global.x_location);
+  //if (get_location() == true) {
+    //console.log(global.x_location);
+  //};
+
+  //console.log(global.x_location);
 
 
 
@@ -462,33 +469,58 @@ Object.size = function (obj) {
 };
 
 
-function get_location() {
-  watchId = geolocation.watchLocation(
-    function (loc) {
-      if (loc) {
-        global.x_location = loc.latitude;
-        global.y_location = loc.longitude;
-        //console.log("Received location: " + loc.latitude);
-        return true;
-      } else {
-        //console.log(' nema loca ');
-        global.x_location = 0;
-        global.y_location = 0;
+function enableLocation() {
+console.log(' u enablanju lokacije 1');
+  return new Promise(function (resolve, reject) {
+    console.log(' u enablanju lokacije 2');
+      geolocation.isEnabled().then(function (isEnabled) {
+          if (!isEnabled) {
+              alert ('location is not enabled... try enabling');
+              geolocation.enableLocationRequest().then(function () {
+                  alert ('location is  enabled now!');
+                  resolve();
+              }, function (e) {
+                  console.log('location failed to be enabled');
+                  console.dir(e);
+                  reject(e);
+              });
+          }
+          else {
+              console.log('location is  enabled');
+              resolve();
+          }
+      }, function (e) {
+          reject(e);
+      });
+  });
+}
+exports.enableLocation = enableLocation;
 
-        return true;
+function getLocation() {
+  
+  return new Promise(function (resolve, reject) {
+        
+          geolocation.getCurrentLocation({
+              desiredAccuracy: enums_1.Accuracy.high,
+              maximumAge: 10000,
+              updateDistance: 0.1,
+              timeout: 20000
+          })
+              .then(function (loc) {
+              if (loc) {
+                global.x_location = loc.latitude;
+                global.y_location = loc.longitude;
+                //console.log(' get location 2');
+                resolve(loc);
+              }
+          }, function (e) {
+              reject(e);
+          });
+  });
+}
+exports.getLocation = getLocation;
 
-      }
-    },
-    function (e) {
-      console.log("Error: " + e.message);
-      global.x_location = 0;
-      global.y_location = 0;
-      return true;
-    },
-    { desiredAccuracy: 3, updateDistance: 10, minimumUpdateTime: 1000 }); // should 
 
-  return true;
-};
 
 
 

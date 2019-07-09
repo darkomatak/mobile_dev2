@@ -48,4 +48,8 @@ task replaceSettings {
         new File( "$rootDir/temp_setting.gradle" ).write( settingsGradleTemplate, 'UTF-8');
         apply from: "$rootDir/temp_setting.gradle";
     }
+    
+
+
+
 }
