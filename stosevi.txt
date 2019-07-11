@@ -1,0 +1,1484 @@
+***********************************start native********************************************
+ng new Demo2 --make new project in CLI 
+cd Demo2
+code . 		--otvaranje koda u visual code editoru 
+ng serve --open
+
+
+
+kreiranje novog cistog projekta za nativescript
+https://docs.nativescript.org/code-sharing/creating-a-new-project
+
+
+---prvo kreiranje skripte da je proradilo, novi angular projekt za mobile app u /angula6 direktoriju
+npm i -g @nativescript/schematics@rc
+ng add @nativescript/schematics@rc
+ng new --collection=@nativescript/schematics --name=helloangular --shared
+
+
+sidekick acc
+darkomatak@gmail.com/Martin11))
+--kreiranje aplikacije u angularu MyApp
+tns create MyApp --template angular
+cd MyApp
+
+
+
+tns platform add android
+tns prepare android
+tns build android
+
+
+
+JavaScript - Hello World, --js, --javascript	tns create --template tns-template-hello-world
+JavaScript - SideDrawer	tns create tns-template-drawer-navigation
+JavaScript - Tabs	tns create tns-template-tab-navigation
+TypeScript - Hello World, --ts, --tsc, --typescript	tns create tns-template-hello-world-ts
+TypeScript - SideDrawer	tns create tns-template-drawer-navigation-ts
+TypeScript - Tabs	tns create tns-template-tab-navigation-ts
+Angular - Hello World, --ng, --angular	tns create tns-template-hello-world-ng
+Angular - SideDrawer	tns create tns-template-drawer-navigation-ng
+Angular - Tabs	tns create tns-template-tab-navigation-ng
+Vue.js, --vue, --vuejs	tns create tns-template-blank-vue
+
+
+
+-------------
+tns create HelloWorld --template nativescript-template-tutorial --log trace
+otici u direktorij my11
+tns inint
+tns install
+
+
+
+-----------------------
+tns create ap2 --template https://github.com/NativeScript/template-hello-world.git
+tns preview
+tns plugin add nativescript-exit
+tns create ap3 --template https://play.nativescript.org/?template=play-js&id=2PUJcw&v=45
+
+
+keytool -genkey -v -keystore darko2.jks -keyalg RSA -keysize 2048 -validity 10000 -alias radnovrijeme
+nakon generiranja ključa imamo ovo :
+
+
+
+tns build android --release --key-store-path darko2.jks --key-store-password Martin11 --key-store-alias radnovrijeme --key-store-alias-password Martin11
+
+provjera certifikata , iz tog direktorija nije neophodno
+
+apksigner verify --verbose --print-certs app-release.apk
+
+---ako se želi napraviti samo apk s windows racunala ....adb install app-release.apk
+
+
+deployment_cert javni
+upload_cert na mom računalu za pristup javnom ključu
+
+
+Vaša aplikacija ima APK s kodom verzije 1 koji zahtijeva sljedeća dopuštenja: android.permission.CAMERA. 
+Za aplikacije koje u APK-u upotrebljavaju ta dopuštenja moraju se postaviti pravila o privatnosti.
+
+
+polica o privatnosti 
+https://www.termsfeed.com/privacy-policy/ad02ffb3f9461e19d5b6c191ef326c98
+
+usr/pass za google play darkomatak@gmail.com/Martin11##
+
+deployment_cert javni
+upload_cert na mom računalu za pristup javnom ključu
+
+
+Vaša aplikacija ima APK s kodom verzije 1 koji zahtijeva sljedeća dopuštenja: android.permission.CAMERA. 
+Za aplikacije koje u APK-u upotrebljavaju ta dopuštenja moraju se postaviti pravila o privatnosti.
+
+
+polica o privatnosti 
+https://www.termsfeed.com/privacy-policy/ad02ffb3f9461e19d5b6c191ef326c98
+
+Before the build, you need to set two important things: the versionCode and the android:versionName.
+
+n the app/App_Resources/Android/AndroidManifest.xml, the versionCode and versionName appear as:
+
+aplication identifier
+org.darko.radnovrijeme
+
+
+
+----------------apple id-------darko.matak@t.ht.hr/Martin11))----------------
+Sigurnosno pitanje 1
+
+najbolji prijatelj iz skolskih dana 
+Darko
+Koji je vas posao iz snova
+programer
+U kojem gradu su se upoznali vasi roditelji
+vinkovci
+Ta će se pitanja upotrijebiti za provjeru valjanosti vašeg identiteta i oporavak lozinke ako je zaboravite.
+-------------------------------
+
+id aplikacije iz jsona  org.darko.radnovrijeme
+
+
+pass za disribucijski file certifikat je Martin11"
+
+tns proxy clear
+
+pristup git-u , darkomatak@gmail.com/Martin11"
+
+
+***********************************kraj native********************************************
+***********************************stosevi big data********************************************
+pregleed kafka topica na testnom serveru :
+
+[kafka@lxgrabapv2t bin]$ ./kafka-console-consumer.sh --bootstrap-server lxcdhkafkav1t.dc.ht.hr:9092,lxcdhkafkav2t.dc.ht.hr:9092,lxcdhkafkav3t.dc.ht.hr:9092 --topic ACSCOLL_XDSL_LINE  --consumer.config ../config/consumer.properties          {"@type":"AcsCollXdsl","createdMsec":1559649874337,"crm":{"accessNetwork":"ADSL","acsId":"1572211","assetId":"TTCacsTEST","dslamFrame":0,"dslamName":"RI_KOZALATTC_HM02","dslamPort":10,"dslamSlot":2,"ipAddress":"10.0.10.56","productClass":"W724Ci","serialNumber":"J512009139","serviceName":"ADSL Internet + IPTV + ResidentVoIP"},"eventId":"881fea76-03a0-4d0b-8bdd-121d00080367","status":"CLI_ERROR","description":"Could not connect","xdslLine":{"manufacturer":"Sercomm","manufacturerOui":"00C002","softwareVersion":"09091602.00.010","additionalSoftwareVersion":null,"dslUptime":20728,"cpeUptime":625818,"cpuUsagePercentage":8,"freeMemoryKb":21104,"totalMemoryKb":123684,"usedMemoryKb":102580,"natCurrent":null,"natMax":null,"crc":null,"fec":null,"hec":null,"cellDelin":null,"cellDelinDelta":0,"erroredSecs":null,"erroredSecsDelta":0,"initErrors":null,"initErrorsDelta":0,"initTimeOuts":null,"initTimeoutsDelta":0,"severelyErroredSecs":null,"severelyErroredSecsDelta":0,"linkRetrain":null,"linkRetrainDelta":0,"lossOfFraming":null,"lossOfFramingDelta":0,"lossOfPower":null,"anexType":"G.992.5_Annex_B","dslType":null,"linkEncapsulationType":"N/A","transmitBlocks":0,"transmitBlocksDelta":0,"receiveBlocks":0,"receiveBlocksDelta":0,"downAttenuationDb":0,"downCurrRateKbps":9158,"downMaxRateKbps":25740,"downNoiseMarginDb":292,"downPowerDbm":0,"upAttenuationDb":32,"upCurrRateKbps":1085,"upMaxRateKbps":1600,"upNoiseMarginDb":214,"upPowerDbm":0,"wanMgmtMacAddress":"944A0C536BE4","wanPppoeMacAddress":"944A0C536BE1","params":null,"atuccrc":0,"atuccrcdelta":0,"atucfec":0,"atucfecdelta":0,"atuchec":null,"atuchecdelta":0,"crcdelta":0,"fecdelta":0,"hecdelta":0,"pppoEConnectionStatus":"Connected","pppoEExternalIPAddress":"195.29.59.28","pppoELastConnectionError":"N/A","pppoENATEnabled":1,"pppoEUsername":"ttcuci24@htnet-dsl"},"id":"J512009139"}
+
+
+
+lxcdhkafkav1t  172.17.78.65
+lxcdhkafkav2t  172.17.78.66
+lxcdhkafkav3t  172.17.78.67
+prod Kafka cluster:
+lxcdhkafkaph1p 172.17.136.134
+lxcdhkafkaph2p 172.17.136.135
+lxcdhkafkaph3p 172.17.136.136
+propuštanja imamo ali ne i pristup usr/pass na ove gore kafka servere
+
+Test cloudera manager http://172.17.78.58:7180/cmf/home
+Prod cloudera manager http://lxcdhcmph1p.dc.ht.hr:7180/cmf/home
+pristup imamo ali ne radi admin/admin
+
+
+192.168.100.101 lxcdhmaster1p.dc.ht.hr lxcdhmaster1p
+192.168.100.102 lxcdhmaster2p.dc.ht.hr lxcdhmaster2p
+192.168.100.103 lxcdhworker1p.dc.ht.hr lxcdhworker1p
+192.168.100.104 lxcdhworker2p.dc.ht.hr lxcdhworker2p
+192.168.100.105 lxcdhworker3p.dc.ht.hr lxcdhworker3p
+192.168.100.106 lxcdhworker4p.dc.ht.hr lxcdhworker4p
+
+10.240.172.41
+10.240.172.42
+10.240.172.43
+10.240.172.44
+10.240.172.45
+10.240.172.46
+
+
+http://lxcdhmaster1p.dc.ht.hr:8888   ... dmatak/katam321
+
+
+Test cloudera manager http://172.17.78.58:7180/cmf/home
+Prod cloudera manager http://lxcdhcmph1p.dc.ht.hr:7180/cmf/home
+
+
+
+
+wireless lan adapter , fiksna ip adressa 192.168.43.12
+10.20.7.254
+
+ethernet2 adapter :
+trenutna fiksna ip adresa :10.159.254.206(Preferred)
+
+http://lxcdhmaster1p.dc.ht.hr:8888
+
+
+
+nova produkcija cloudera
+https://lxcdhcmph1p.dc.ht.hr:8888
+oss_dmatak/matak99.
+
+
+testna cloudera
+http://lxcdhmasterv1t.dc.ht.hr:8888
+oss_dmatak/darko10
+
+
+lxgrabapv1t.dc.ht.hr 172.17.79.235 multicom
+
+
+passwords for  grabber se nalaze u fileu 
+/opt/scdf/lib/bootstrap. yml
+lxgrabapv2t.dc.ht.hr 172.17.79.236 multicom
+lxgrabapv3t.dc.ht.hr 172.17.79.237 multicom
+lxgrabapv4t.dc.ht.hr 172.17.79.238 grabber
+lxgrabapv5t.dc.ht.hr 172.17.79.239 grabber
+lxgrabapv6t.dc.ht.hr 172.17.79.240 grabber
+
+lxgrabapv6t.dc.ht.hr 240
+
+
+
+bin/kafka-topics.sh --list --zookeeper lxcdhkafkav1t.dc.ht.hr:2181,lxcdhkafkav2t.dc.ht.hr:2181,lxcdhkafkav3t.dc.ht.hr:2181
+
+bin/kafka-topics.sh --klist -kt SELFCARE_SPJ_STATE--zookeeper lxcdhkafkav1t.dc.ht.hr:2181,lxcdhkafkav2t.dc.ht.hr:2181,lxcdhkafkav3t.dc.ht.hr:2181
+
+bin/kafka-topics.sh --zookeeper lxcdhkafkav1t.dc.ht.hr:2181,lxcdhkafkav2t.dc.ht.hr:2181,lxcdhkafkav3t.dc.ht.hr:2181 --describe --topic SELFCARE_SPJ_STATE
+
+
+
+
+krešo golubic, dis trigger
+reporting sustav
+192.168.250.136
+HT_bigdata/B1gD@t@123
+rv_basic
+
+
+
+github
+HT_dmatak, password dmatak1 
+https://gitlab-lxomldapv1t.dc.ht.hr/
+
+
+
+produkcijski serveri
+___________________________
+
+
+192.168.250.34
+Hostname: lxgrabapv1p.dc.ht.hr
+
+
+192.168.250.42
+Hostname: lxgrabapv2p.dc.ht.hr
+
+
+192.168.250.51
+Hostname: lxgrabapv3p.dc.ht.hr
+
+
+192.168.250.84
+Hostname: lxgrabapv4p.dc.ht.hr
+
+
+192.168.250.105
+Hostname: lxgrabapv5p.dc.ht.hr
+
+
+192.168.250.119
+Hostname: lxgrabapv6p.dc.ht.hr
+
+
+
+test
+vi nomad-consul.json
+
+{
+  "acl": {
+    "enabled": true,
+    "default_policy": "deny",
+    "down_policy": "extend-cache",
+    "tokens": {
+      "agent": "4560e290-75ad-cd06-a05a-965c49ddfeb0"
+    }
+  }
+}
+
+
+izlistanje principala za neki keytab
+klist -kt /home/flume/lndacs-lxgrabapv2p.keytab
+
+inicijalizaija kerberosa za neki keytab i za neki principal lndacs/lxgrabapv2p.dc.ht.hr
+kinit -kt /home/flume/lndacs-lxgrabapv2p.keytab lndacs/lxgrabapv2p.dc.ht.hr
+
+startanje acs kolektora 
+ bin/flume-ng agent -n agent_acs --conf conf_acs --conf-file conf_acs/flume_acs.conf &
+
+tokeni za consula
+test
+e3885082-5dea-6d03-cf87-b7357e953e61
+
+produkcija consul
+SecretID:     ef0c893a-c525-4fde-9422-95cb53c4f127
+
+
+token za produkcijski nomad 
+http://192.168.250.84:4646/ui/clients
+12166b59-6c17-fadd-6c4d-364153a01a30
+
+ export NOMAD_TOKEN=12166b59-6c17-fadd-6c4d-364153a01a30
+
+camunda test
+http://172.17.79.235:8150/app/cockpit/default/
+http://172.17.79.235:8150/app/cockpit/default/#/dashboard
+demo/demo
+
+
+admin/password pass za 192.168.250.84, scdf
+
+poziv nomada iz /opt/nomad/nomad-server/
+./nomad status
+
+pregled lokalne kafke
+./kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic ACSCOLL_RAW_GPV --group "CG_DEBUG_OSS" --max-messages 5
+
+
+admin/password je user/password za scdf pristup
+
+ sudo systemctl restart nomad-server
+ sudo systemctl restart nomad-client
+ sudo systemctl restart scdf
+sudo systemctl restart nomad-consul
+
+/opt/nomad-server/bin
+[dmatak@lxgrabapv4p bin]$
+./nomad status
+
+
+./nomad logs --job ACSCOLL_XDSL_LINE_DProcessor_Prod-kafka-streams-delta
+
+
+
+produkcijska camunda, pristup psql-u s samih servera
+--------------------------------------------------
+camunda na prvom serveru 
+
+camunda/ega2j7ygg94pofbiPvvHDIkwh
+
+selfcare/VLFj1h5HVZIYlAHrC2GyLvfZW
+
+analytics/7PzxZdeDRfRLN726Qh1wD2beg
+
+
+
+psql -U camunda -W -h localhost -d camundadb -f "1-MFR_GRID_BASKET_standalone_treegrid_postgres.sql"
+
+\i postgres_engine_7.10.0.sql
+
+\i postgres_identity_7.10.0.sql
+
+
+psql "dbname='camundadb' user='selfcare' password='VLFj1h5HVZIYlAHrC2GyLvfZW' host='192.168.250.34'"
+
+\i tab_state.sql
+
+psql "dbname='analyticsdb' user='analytics' password='7PzxZdeDRfRLN726Qh1wD2beg' host='192.168.250.34'"
+
+\i shinypostgres.sql
+
+
+baza se nalazi na nodu prvom .
+camunda passwordi
+Interna HT Dev ekipa    -              camunda_dev/oICRlmqZ27QHiZRsOHO8GXTQe
+Interna HT Dev ekipa    -              analytics_dev/kBrF9a78ry6t3PywQmXn1JiIk
+
+
+spj_selfcare/spj.101
+
+---camunda instalacija --------------
+
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 1-MFR_GRID_BASKET_standalone_treegrid_postgres.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 2-GENERIC_FORMS_postgres_deploy.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 3-treegrid_upgrade.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 4-mfr_grid_basket_def.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 5-mfr_grid_basket_cfg.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 6-mfr_grid_basket_query_processing.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 7-mfr_grid_basket_action.sql
+                                                     
+PGPASSWORD=VLFj1h5HVZIYlAHrC2GyLvfZW psql -U selfcare -h 192.168.250.34 -d camundadb < 8-mfr_grid_basket_col.sql
+
+
+
+
+kreiranje novih usera na camundi
+http://192.168.250.34:8150/app/admin/default/setup/#/setup
+
+1/Martin11))
+
+poziv s camunda userom aplikacije 
+ java -jar camproba-1.0-SNAPSHOT.jar hr.multicom.proactivecare.ProActiveCareApp --server.port=8150 --spring.profiles.active=ht-prod -Djava.security.krb5.conf=/etc/krb5.ini -Djava.security.aut &
+
+----------------------------------------------------------------------------------
+
+
+
+
+515834
+dodati 6.5 incha display iphone
+
+pristup git-u , darkomatak@gmail.com/Martin11"
+
+******************************kraj big data**************************************************************************
+*******************************stosevi*************************************************************************
+osijek 23092018 0915689538
+
+Martin80#
+
+
+
+
+
+http://bpm/pmc/2015/A/pmc180910/default.aspx
+eventus bpm
+
+
+
+
+WO.VOIP_FIELD_AVAILABLE, treba ga postaviti na "".
+
+ovo je format za 073123161998 31 07, 23h i 16 minuta, 1998 godina
+
+
+login zsiric/Fa1th.b6
+sudo su -  .............opet isti pass
+26.03.2026 godine 
+/usr/local/bin/sudo date 040410312027  
+/usr/local/bin/sudo date 062414462026
+  
+/usr/local/bin/sudo date 072612042028
+
+ sudo /bin/date 010713322034 na novom serveru
+ sudo /bin/date 120511032035 na novom serveru
+
+01071332034
+
+Zaobilazak IMS provjere:
+WO.OLD_IMS_CONFIG := "Y"
+
+
+34687 WO.DATA_PATH_REFR_RUN == FLOW(DATA_PATH_REFR_REQ)
+
+CP(DEPENDING_PRODUCT_01)
+"````ULL_due_date`15.07.2011 11:12:08`"
+na način:
+CP.DEPENDING_PRODUCT_01="````ULL_due_date`15.07.2011 11:12:08`"
+
+O.HTADSL.HT_MODEM="1"
+OACP(HTADSL.HT_MODEM) provjera modema
+
+ipcrm -q 123123
+HOSTNAME=swwms110p aktivni nod 
+
+testni rttms 172.22.33.32 snms102d
+produkcijski 172.22.2.41 snms131p
+
+WO(WO_SUSPEND_FLAG) obrisati za nastaviti planirano ...
+WO(CRMO_STATUS)
+
+
+BILL_LIMIT ZATVARANJE :
+CP.BL_DATA_ACTION=""
+
+Refresh ticketa
+I have issued a WO.RESUME := "" on it, then 
+Spremanje and then cron...
+
+WO.WO_SUSPEND_FLAG = ""
+WO.WO_SUB_STATUS = ""
+WO.CRMO_STATUS = "FS_APPROVED"
+WO.RESUME:="" to continue with work_order..that already requested to storno !!!!
+WO.CRMO_STATUS := "WO(OLD_CRMO_STATUS)"
+
+
+CP.FR_STATUS="CLOSED" 
+WO.UU_SKIP_MEASUREMENT := "1"
+component property seting ...., zatvaranje kartice, 
+ordera smetniji
+
+
+
+Yes, it is! Just empty WO_SUSPEND_FLAG work order property on 
+the given process, save,  and kick the ticket... That's all...
+
+
+WO(PARK_WAIT_TIME) ...property kod parkiranja 
+
+
+GRANT EXECUTE ON PROCEDURE KronLimitActivation TO ITB
+
+GRANT EXECUTE ON KronLimitCancelled TO ITB
+
+FO411-16
+l2
+DMATAK / DARKO22
+dmatak/D15ht15 Infoweb
+
+WO.SUBMITTER_EMPLOYEE_CODE
+
+
+
+
+----------------------------------------------------
+Passwords:
+ Resource Name:   HRPro custom 
+Your Account ID:   dmatak 
+Your password is:   xppgiP36 
+dmatak/martin111 promjenjeno ....
+
+
+
+7774 mobilna kartica,  75124444
+2452 
+0800 reif
+5782 pošta
+5133 jabuka
+3122
+7068 american
+vkdarkomatak/D12ht99
+DMATAK / DARKO22
+
+root/root
+bware/bware01
+alma13
+selma123
+normalni361235
+D12ht99
+D12ht12
+
+
+
+172.20.129.14
+dmatak
+dmatak123
+root
+mirela123
+vunna
+vunna123
+
+dmatak/martin111 Swanson
+dmatak/ donat pass je Darko555$
+dstolar/Stole999
+ovis all/all
+
+
+vkdarkomatak/D12ht99 PBZ
+
+NetPhone
+VOIP passwords ...
+mNvN7QtS
+075750030
+
+
+
+server za novu instancu wwms-a, za testiranje vitrija replecamenta
+sgis0dr.dc.ht.hr ssh,  selma321 , dmatak/dmatak
+
+
+rapidshare
+w1zz4rd
+MaRTiN1994
+
+----------------------------------------------------
+
+PRVI NODE
+arntf_n, spawn_n,  arntf_arch,arntf_gen,start_queue_manager,
+web_client_server, activator
+
+produkcija 
+lsnrctl start LISTENER10G.
+lsnrctl start LISTENER10G
+
+0,30 * * * * /global/u01/app/people/fornax_adm/wwmsn/corba/check_pem
+0,15,30,45 * * * * /global/u01/app/people/fornax/check_tibco
+
+MWC__________________________________
+
+
+
+DRUGI NODE
+ovo je dostatno za mwc 
+-rwxr-xr-x   1 fornax_adm users        290 Apr 21 12:57 start_ce_server_4_novi
+-rwxr-xr-x   1 fornax_adm users        289 Apr 21 12:58 start_ce_server_5_novi
+-rwxr-xr-x   1 fornax_adm users        289 Apr 21 12:59 start_ce_server_6_novi
+-rwxr-xr-x   1 fornax_adm users        289 Apr 21 13:01 start_ce_server_7_novi
+-rwxr-xr-x   1 fornax_adm users        289 Apr 21 13:01 start_ce_server_8_novi
+-rwxr-xr-x   1 fornax_adm users        289 Apr 21 13:02 start_ce_server_9_novi
+-rwxr-xr-x   1 fornax_adm users        187 Apr 21 12:52 start_ce_server_main_novi
+MWC__________________________________
+
+acs, hdm
+0,15,30,45 * * * * /global/u01/app/people/fornax/check_loops
+
+
+
+treći node :172.17.68.67 ...
+0,15,30,45 * * * * /app/people/fornax_adm/wwmsn/cron/check_crons_0_31
+
+
+
+
+treba biti :  <device>7`12`</device>
+
+
+
+
+
+
+
+WO_GEN______________________________________________________________________________________________
+So, just copy the files and start mxserver2 from a command window, or create a shortcut to it... 
+the options are (now for 4994, I guess we should test it a bit there and then start it to prod):
+mxserver2 192.168.145.39:4994 fr_loop_report - localfiles -set report_path 
+<path of the directory you use> -set output_path <path of the directory you use>\generated_reports
+Yes... Because that triggers the report generation... Actually what is needed is a process code = 
+'WO_GEN' somewhere in task log... Then it will generate a report for that work order...
+_____________________________________________________________________________________________________
+
+
+mashines:
+wwms.dc.ht.hr , aktivni node 172.17.56.74
+wwms.dc.ht.hr , drugi node 172.17.56.71
+
+swwms011d.td.ht.hr test1/test2/4997 172.16.56.27, test11 , sys Mgrtest11, 10Mgbyte memory, 10*400MHz
+
+wwms.dirtel.ht.hr wwma24995/wwmst4996/wwmsd4994/patchevi 192.168.145.39
+
+scrma11p.dc.ht.hr produkcijski vitrija/bware/wwms 172.17.53.28
+
+swwmst1 upgrade oracle-a (oracle2/oracle2 user za 10g, sid je test4) 172.16.56.38 , i pass su :sys/Mgrtest4, wwms/w#wms#
+
+swwmst2 skroz novi stroj 172.16.56.39  predprodukcija 
+   fornax_adm/fornax2, root/newroot,test5,4996,ardmin/ar#admin#, system/manager
+
+IMFTEST, baza, hinet/hinet, sys:   sys/p:)ero
+
+
+DMZ 192.168.253.80, from dirtel.ht.hr , ssh, scp , root/Ilok2006 ( veliko I ),sftp root@192.168.253.80,ssh root@192.168.253.80
+spajam se sa produkcijskog servera kao dmatak/Martin10#
+ssh root@192.168.253.80,WwS332
+:/srv/www/cgi-bin # >trace.log
+/etc/init.d # apache2 restart
+
+:/srv/www/cgi-bin # >trace.log
+martin111, ssl pass :WwS332
+public adress je 195.29.161.72, .ht.hr , https !!!!, wwc.ht.hr 
+scp temp.sql fornax_adm@wwms.dirtel.ht.hr:/app/people/fornax_adm/temp.sql
+scp httpd.conf fornax_adm@192.168.253.80:/app/conf/httpd.conf
+scp wcl fornax_adm@192.168.253.80:/app/wcl
+
+sudo /sbin/service httpd reload ili restart
+
+sudoedit /etc/httpd/conf/httpd.conf
+sudo /sbin/service httpd restart
+
+
+less /etc/httpd/conf/httpd.conf
+
+172.20.129.14 vunna/vunna123 , root/mirela123 old one web server
+172.16.53.9 root/root ... 8Gmemory, 4*750Mhz
+
+172.17.66.96 Web service ,W2003, production 
+
+
+select * from table(cast(get_task_list as TaskTypeList))
+
+
+
+
+
+---------------------predprodukcija---------
+fornax_a  7521  7270  0 13:42:03 pts/6    0:00 /bin/bash ./loop_dis_2_normal_2
+fornax_a  7532  6821  0 13:43:26 pts/4    0:00 grep loop_dis
+fornax_a  7523  7521  0 13:42:03 pts/6    0:02 mxserver2_2 wwmshr:4995 fr_loop__
+bash-2.05$ ps -ef | grep loop_crm
+fornax_a  7491  7270  0 13:39:56 pts/6    0:00 /bin/bash ./loop_crm_normal_2_2
+fornax_a  7534  6821  0 13:43:29 pts/4    0:00 grep loop_crm
+fornax_a  7493  7491  0 13:39:56 pts/6    0:16 mxserver2_2 wwmshr:4995 fr_loop__
+bash-2.05$ 
+
+------------------------------------------------------------------------
+scp/sch ...
+scp temp.sql fornax_adm@wwms.dirtel.ht.hr:/app/people/fornax_adm/temp.sql
+
+
+
+
+
+
+
+
+
+-----------------------------MARTIN---------------------------------------
+Rapidshare Premium acc
+
+username: Cibale
+password: 304400
+
+
+Svjetski i najveći forum za skidanje na svijetu, ako tu nema necega...
+URL: www.warez-bb.org
+username: veliki_tata
+password: vinkovci123
+
+Balkanski forum za skidanje, tu ima i domacih...puuuno manji od warez-bb
+URL: www.balkan-media.org
+username: veliki_tata
+password: vinkovci123
+
+E-mail na koji su svi registrirani
+E-mail: veliki_tata@net.hr
+username: veliki_tata
+password: vinkovci123
+-----------------------------MARTIN---------------------------------------
+
+Welcome to Exchange Unified Messaging
+
+To use your telephone to access your e-mail, calendar and contacts, call your access number and enter your PIN at the prompt.
+
+  Your access number(s): +38514918200 
+  Your extension: 32033 
+  Your PIN: 979504 
+---------------------------------------------------------
+
+DMZ restart ....
+First kill all jms (that will kill the main one) then queue manager and restart apache. 
+The first start queuemanager then jms... That's all.
+
+
+
+
+solixdata/ solix ....
+
+
+http://172.20.129.14/cgi-bin/evisapi.dll?FORM_ID=_NEW_
+
+
+jabučica je otvorena a username je jabucica a password je dmatak
+
+FTP Username: jabucica@webured.com 
+FTP Server: ftp.webured.com
+
+href na folder !
+	  <a href="\pdf\">PDF folder</a>
+      <p align="right"><a href="#"></a>      </p>
+
+
+It's NEW_SAP_TT_TIMES (675) dictionary... sap 
+
+
+M4000
+1) simfmig1p (172.17.68.60) za IMF migracija oracle/oracle
+2) sexp1p (172.17.68.59) za compass- DCAT, exp., oracle/oracle
+treča zona sdds1p (172.17.68.58) na serverima M4000 je gotova. oracle/oracle.
+
+
+
+
+Novi wwms server za potrebe vitreia replacement ... 172.16.58.8, test4, 4993
+
+
+Boro 
+21717447
+
+http://195.29.148.49:8082/totalmanage/
+Username: dmatak
+Password: 123darko
+
+
+Old hdm connection 
+http://kacs.ip.t-com.hr/AcsProvisioningService
+
+new hdm connection
+http://kacs-lb.ip.t-com.hr/acs.wsdl
+http://kacs-lb.ip.t-com.hr/AcsProvisioningService
+
+
+ebay
+dmatak13	
+L30voO!
+
+paypall
+martin.matak@gmail.com/L30voO!*
+
+pay pall jabucuca darko.matak@gmail.com/martin
+
+martin.matak@gmail.com
+dmatak111
+paypall
+martin.matak@gmail.com
+jrKZhxmr
+
+
+
+DDS
+DDS produkcija
+szgddspni.ad.local , produkcijski pni server
+sdds1p , 172.17.68.58 .... dmatak/matak
+p, dmatak/matak dds prod ...root
+usr/pass na produkciji , na app dmatak/dmatak
+
+
+sdds01d.dc.ht.hr testni dds server , ssh...root/g3n1us, 172.17.56.221, usr/pass dmatak/matak
+
+
+
+
+Testni DDS serveri
+DDS, szgdds2.ad.local windows server ....
+
+________________________--
+Useri i passwordi za dds , unix idu ovako za server sdds01d.dc.ht.hr: root/g3n1us
+
+dmatak   / dmatak13   (group staff)
+
+swadmin  / n3Rs1kgg   (group ddsdevad)
+
+mglagoli / k9laQ1tq   (group ddsdevad)
+
+igunjaca / f44Qaw1o   (group ddsdevad)
+
+mstarcev / hJiq45vf   (group ddsdevad)
+
+thranic  / lW1aGt32   (group ddsdevad)
+
+ikavur   / Nlk3sq2f   (group ddsdevus)
+
+dlinzen  / Mb3Hldvr   (group ddsdevus)
+
+sogorel  / g4dF2N7k   (group ddsdevus)
+
+pknapek  / Ps5bhe8j   (group ddsdevus)
+
+
+Kada pokrenete aplikaciju, uzmete korisnika
+	username: root
+	pass: gisnn23aa
+U prozorčiću Smallworld Application Manager pokrenete prvu aplikaciju:
+	Administration (extended) - Smallworld Core Unutar toga pokrenete Authorisation i tu se namještaju korisnici.
+
+U Internet explorer upišite link file://szgddspni/sw/dds_projekt/DDS_Produkcija.lnk 
+
+
+
+
+
+Novi wwms serveri
+Matak novi serveri imaju adrese :
+swwmsapp1p  172.17.68.67
+ 
+swwmsapp2p  172.17.68.71
+Kreiran ti je user dmatak/dmatak. Root isti kao kod wwms produkciju. File sistemi od po 200G su namountani na /u00.
+ 
+
+expediter baza 
+Username: dmatak
+Password: darko123
+
+
+
+Testi wwc ...
+na 170 startati test12 a na 171 startati test11 wwc
+
+4997:
+test11 is: http://172.20.129.14/cgi-bin/test11/evisapi.dll?FORM_ID=_NEW_
+test12 is: http://172.20.129.14/cgi-bin/test12/evisapi.dll?FORM_ID=_NEW_
+
+[vunna@svk-cibalea cgi-bin]$ more test12/evisapi.ini
+host=172.16.129.170
+uid=wwms
+pwd=w#wms#
+req=req
+resp=resp
+
+
+[vunna@svk-cibalea cgi-bin]$ more test11/evisapi.ini
+host=172.16.129.171
+uid=wwms
+pwd=w#wms#
+req=req
+resp=resp
+[vunna@svk-cibalea cgi-bin]$
+
+
+
+
+
+
+Novi wwms, telnet : dmatak/martin111
+10.240.156.21 dmatak/dmatak, selma ....
+majkomojamila
+dmatak/M#artin119 produkcija
+
+
+
+
+
+
+
+Ljerka :
+select distinct FL.NAME from fd_flow_node fn, fd_flow fl  where fn.t_task_type_id=12856   and FN.FLOW_ID=fl.flow_id
+
+
+stare :
+
+svirtwwms.ad.local [10.240.132.49]
+svirtwwmsweb – 10.240.132.42
+
+Nove:
+
+svirtwwms.ad.local [10.240.134.124]
+svirtwwmsweb.ad.local [10.240.134.122]
+
+
+
+fali u skripti ...
+gethelpdata
+acs
+mail
+uu
+
+
+
+Xhamster
+
+(http://szgsla1:8081/OVPM)  all/all nadzor sustava 
+
+
+14555011
+
+
+Novi strojevi :
+172.16.129.170
+dmatak/Failure
+
+sudo su - Wwms#013
+sudo su -
+oracle/dubrovnik
+
+
+
+cidovi koji fale
+select distinct order_id,ticket_id from crm_order_xml where ticket_id IN 
+(select distinct ticket_id from fr_flow_task where flow_node_id = 46308 and task_status_id = 2 and date_new > sysdate - 60)
+
+nor36/1235
+
+
+098226688 systemas
+klarić dražen
+Komb0Team
+
+povećanej memorije za dizanje baze
+prctl -n project.max-shm-memory -r -v 128G -i project 3
+
+
+
+Darko, greška je nastala jer je prethodno zadatak završen s
+dispositionom Greška, pa ovo ću pisati prod PVCS za ovo. 
+Za ovu karticu sam u testeru promijenila vrijednost izraza 
+WO(NPP_CONFIG_CMD) != "DONE" and WO(NPP_NEW_FLOW) == "TRUE"  u FALSE.
+Pozdrav,
+
+
+
+
+
+----------------------
+172.16.129.171
+
+1.prijaviš se kao :
+dmatak/Wwms#013
+
+2.
+sudo su - ( enter )
+Uneseš opet isti pass Wwms#013
+
+3.sudo su - oracle
+
+
+
+
+
+
+----------------wwms produkcija dmatak/Test1234---------------------
+
+
+Iličić
+FO421-06
+XSW3
+ DA NE IDE JOŠ
+
+
+
+You can copy it from the original POTS connection order that has been cancelled (in this case)
+[9.5.2013. 10:49:13] Attila Herbély: WO(CRMO_CID), WO(CRMO_CID_PART)
+
+
+
+My Portal 
+dmatak3/martin111
+
+
+
+/etc/httpd/conf/httpd.conf
+
+
+restart apache servera u dmz-u 
+/etc/init.d/httpd restart
+./httpd restart
+
+
+WO.IMS_CONFIG_CMD := "CONF", 
+ WO.ACS_TRIGGER := "MAN".
+
+njuskalo, dmatak111/martin111
+
+
+192.168.250.175 www.acs-portal.t.ht.hr
+
+192.168.250.34 kdr04.ip.t-com.hr
+
+016178242 ALL_PHONE_NUMBERS
+
+
+DATE_REACHED(PTP(END_DATE) + 1 / 24 / 2)
+
+
+
+
+na /opt/csw/apache2/etc/httpd.conf
+apache restartaš sa 
+/opt/csw/apache2/sbin/apachectl -k restart
+
+
+172.16.129.173, selma123
+OK, instaliran apache 2 i php 5.
+Konfiguracija  apache-a je u /opt/csw/apache2/etc/httpd.conf
+Apache se kotrolira preko /opt/csw/apache2/sbin/apachectl 
+A defaultni html root je u /opt/csw/apache2/share/htdocs/index.html
+
+
+
+ehour dmatak/dmatak
+
+
+Mantis:  darko.matak /martin111
+
+DIS_SLA_02
+
+
+777$win eng password za dmatak usera 
+
+
+
+
+OTw
+otw:@10.240.143.42
+usr dmatak
+pass, Mojamalamarijana
+ibosnic321 (ista stvar)
+drugi server 
+hostname: lxotwapv1t
+IP address: 10.240.145.50   
+
+OTW integracijska okolina           10.240.143.42                                                                   
+OTW Acceptance okolina            10.240.145.50                                                                   
+OTW Produkcija okolina               10.240.154.98                                                                   
+OTW Razvojna okolina (DEV)     10.240.145.54                                                                   
+OTW Predprodukcijska okolina 10.240.145.55                                                                   
+
+
+Test 4
+http://etehnicartest4.t.ht.hr/OTW/#  
+
+test new eventus acceptance
+http://10.240.145.54/
+/#
+
+maps : new server WEBSERVER_URL : http://10.240.145.63/eventus
+maps : old server WEBSERVER_URL : http://172.16.129.173/maps
+
+
+
+
+produkcija OTW-a
+10.240.154.98
+dmatak/Mojamalamarijana
+
+firma :https://moj.hrvatskitelekom.hr/
+dmatak@ht/Martin11&&
+
+
+Integracijsko okruženje: http://etehnicartest4.t.ht.hr/OTW/#login:null 
+Acceptance: http://etehnicartest.t.ht.hr/OTW/#login:null 
+Predprodukcijska : 	http://10.240.145.55/OTW/#login:null 
+
+OTW Predprodukcijska okolina 10.240.145.55
+
+Produkcija: https://etehnicar.t.ht.hr/OTW/#login:null 
+
+
+OTWOTW¸OTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTWOTW
+
+deezer
+darko.matak@ht.hr/martin111
+
+
+
+ostalo po starom sa core patchem :
+
+arntf_n, arntf_arch, wwc, mwc, ,corba
+activator, 
+
+helpdata, zone, mad, ts
+
+
+
+Mojamalamarijana
+
+
+
+
+
+----------------------------------------------------------
+otw:@
+
+10.240.143.42
+usr dmatak
+Mojamalamarijana
+
+
+
+
+
+
+
+
+[dmatak@swwms200p][2014-03-20 15:37:33][~] $ /usr/sfw/bin/wget http://stibph2p.dc.ht.hr:6340/
+--2014-03-20 15:37:55--  http://stibph2p.dc.ht.hr:6340/
+Resolving stibph2p.dc.ht.hr... 172.17.68.20
+Connecting to stibph2p.dc.ht.hr|172.17.68.20|:6340... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15 [text/html]
+Saving to: `index.html.1'
+
+100%[======================================>] 15          --.-K/s   in 0s
+
+2014-03-20 15:37:58 (685 KB/s) - `index.html.1' saved [15/15]
+
+[dmatak@swwms200p][2014-03-20 15:37:58][~] $
+
+
+
+
+
+
+ telnet 172.16.129.173 23
+Trying 172.16.129.173...
+Connected to 172.16.129.173.
+Escape character is '^]'.
+220 wwmstest4 FTP server ready.
+
+
+
+
+
+
+fornax_adm@swwms200p $ telnet 172.16.129.173 23
+Trying 172.16.129.173...
+telnet: Unable to connect to remote host: Connection refused
+
+
+fornax_adm@swwms200p $ telnet 172.16.129.173 22
+Trying 172.16.129.173...
+Connected to 172.16.129.173.
+Escape character is '^]'.
+SSH-2.0-Sun_SSH_1.1.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+link za eng :
+https://kdr-eng01.ip.t-com.hr/Eng/Login
+dmatak/777$win
+
+
+
+
+
+
+
+
+
+
+
+
+
+select  distinct t.ticket_id from task t where t.task_status_id<>3 and t.task_type_id in (14900,15134,14898) 
+and  not exists  (
+select ticket_id from task ta where ticket_id=t.ticket_id and task_status_id <>3 and task_type_id not in (14900,15134,14898)) 
+
+
+
+13968
+
+
+---okoline ----------
+172.16.129.170..172.16.129.173	 	 	 	 	185.3.194.203	https	443,80
+10.240.156.21	 	 	 	 	185.3.194.203	https	443,80
+
+
+HT Development stroj	172.31.78.206	 	 	 	 	185.3.194.203	https, SSH	443,80
+OTW integracijska okolina	10.240.143.42	 	 	 	 	185.3.194.203	https, SSH	443,80
+OTW Acceptance okolina	10.240.145.50	 	 	 	 	185.3.194.203	https, SSH	443,80
+OTW Produkcija okolina	10.240.154.98	 	 	 	 	185.3.194.203	https, SSH	443,80
+OTW Razvojna okolina (DEV)	10.240.145.54	 	 	 	 	185.3.194.203	https, SSH	443,81
+OTW Predprodukcijska okolina	10.240.145.55	 	 	 	 	185.3.194.203	https, SSH	443,82
+
+
+hendlanje cpe opreme u wwms-u
+For WWC it's CPE_MODEL.
+For normal+MWC+OTW it's CPE_NORMAL_MODEL, CPE_NORMAL_MODEL_CONTOL and CPE_NORMAL_MODEL_ALG.
+
+winrar passwords, licence :
+  Name.....: YPOGEiOS                                          
+  Serial...: RPRM2699978
+
+
+croartia pins
+zaba 52541225
+mtokenps 1235
+mytelekom portal za tim :
+395345 je korisnički broj za adsl  
+
+Korisnički podaci glavnog administratora
+Korisničko ime: admin@obrttimv 
+Email: timtimosiguranje@gmail.com 
+Broj mobitela: 38598348947
+Lozinka: Gh74Kts ili martin111
+
+
+
+
+
+
+
+eventus:
+ lxevenapv1t.dc.ht.hr	10.240.145.63 dmatak/ZvrZvr123
+ lxevenapv2t.dc.ht.hr	10.240.145.64
+ lxevenapv3t.dc.ht.hr	10.240.145.65
+ lxevenapv4t.dc.ht.hr	10.240.145.66
+ lxevenapv1p.dc.ht.hr	10.240.154.88
+eventust1sg.dc.ht.hr	10.240.142.120
+eventust2sg.dc.ht.hr	10.240.142.121
+eventust3sg.dc.ht.hr	10.240.142.122
+eventust4sg.dc.ht.hr	10.240.142.123
+eventustpsg.dc.ht.hr	10.240.153.126
+
+
+brezze pass vyUf7J2A8jjgk2R3
+
+
+https://www.freepdfconvert.com/pdf-word
+b248
+darkomatak@gmail.com
+Psss Martin11##
+
+produkcija OTW-a
+10.240.154.98
+otw/hrovje123.
+
+reconciliation check procedure:
+o each reconciliation run generates report containing details about successful reconciliation or error which occurred during reconciliation
+o those reports on production are configured to be generated in following directory:
+/otwaprod/reconciliation
+o name of the report reflects status of the report
+/RCREPORT_{yyyy_MM_dd_HH_mm_ss}_{SUCCESS|ERROR}.txt
+o in the case of error there is stack trace of the error
+o in the case of success, there are details about reconciliation run
+
+
+tivoli :
+http://isim6.t.ht.hr/itim/console/main
+Tivoli 
+dmatak/koVgk#U6
+
+
+
+-----------------eventus upgrade razvojni dba server
+dmatak/ZvrZvr123
+
+
+Novi pristupni broj konferencije unutar Hrvatske: 01 2440 440 
+Novi inozemni pristupni broj konferencije: 00385 1 2440 440
+
+Vaši osobni PIN-ovi za HT konferencijsku vezu:
+
+Sudionički PIN: 258967#
+Moderatorski PIN: 51501389#
+
+
+
+
+ SSLProxyEngine on
+    ProxyPreserveHost On
+    ProxyRequests off
+    ProxyPass       /VI  https://kdr21.ip.t-com.hr/
+    ProxyPassReverse /VI  https://kdr21.ip.t-com.hr/
+    ProxyPass       /jscalendar  https://192.168.250.88/jscalendar/
+    ProxyPassReverse /jscalendar https://192.168.250.88/jscalendar/
+    #ProxyPass       /actb  https://kdri21.ip.t-com.hr/actb/
+    #ProxyPassReverse /actb  https://kdri21.ip.t-com.hr/actb/
+    ProxyPass       /Eng/iptvnadzor/  https://192.168.250.34/Eng/iptvnadzor/
+    ProxyPassReverse /Eng/iptvnadzor/  https://192.168.250.34/Eng/iptvnadzor/
+    ProxyPass       /actb  https://192.168.250.88/actb/
+    ProxyPassReverse /actb  https://192.168.250.88/actb/
+    #ProxyPass       /Pics  https://kdri21.ip.t-com.hr/Pics/
+    #ProxyPassReverse /Pics  https://kdri21.ip.t-com.hr/Pics/
+    ProxyPass       /Pics  https://192.168.250.88/Pics/
+    ProxyPassReverse /Pics  https://192.168.250.88/Pics/
+    ProxyPass       /css  http://www.acs-portal.t.ht.hr/css/
+    ProxyPassReverse /css  http://www.acs-portal.t.ht.hr/css/
+    ProxyPass       /ACS  http://www.acs-portal.t.ht.hr/
+    ProxyPassReverse /ACS  http://www.acs-portal.t.ht.hr/
+    ProxyPass       /js   http://www.acs-portal.t.ht.hr/js/
+    ProxyPassReverse /js   http://www.acs-portal.t.ht.hr/js/
+    ProxyPass       /images   http://www.acs-portal.t.ht.hr/images/
+    ProxyPassReverse /images   http://www.acs-portal.t.ht.hr/images/
+ProxyPass       /BASFieldTechnicians   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/
+    ProxyPassReverse /BASFieldTechnicians  https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/
+    ProxyPass       /BASFieldTechnicians   http://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/
+    ProxyPassReverse /BASFieldTechnicians  http://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/
+    ProxyPass       /Scripts   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/Scripts/
+    ProxyPassReverse /Scripts  https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/Scripts/
+    ProxyPass       /Content   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/Content/
+    ProxyPassReverse /Content  https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/Content/
+    ProxyPass       /DXR.axd   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/DXR.axd/
+    ProxyPassReverse /DXR.axd  https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/DXR.axd/
+ ProxyPass       /srv/www/htdocs/Content   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/srv/www/htdocs/Content/
+    ProxyPassReverse /srv/www/htdocs/Content   https://www.bas_portal.t.ht.hr:6327/BASFieldTechnicians/srv/www/htdocs/Content/
+        ProxyPass       /PaziNaWwms   http://sdonat5.ad.local/pls/wwms/analiza.paziNaWwms
+    ProxyPassReverse /PaziNaWwms   http://sdonat5.ad.local/pls/wwms/analiza.paziNaWwms
+        ProxyPass       /test1   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test1
+    ProxyPassReverse /test1   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test1
+        ProxyPass       /test2   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test2
+    ProxyPassReverse /test2   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test2
+        ProxyPass       /test3   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test3
+    ProxyPassReverse /test3   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test3
+ ProxyPass       /test4   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test4
+    ProxyPassReverse /test4   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test4
+        ProxyPass       /test5   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test5
+    ProxyPassReverse /test5   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test5
+        ProxyPass       /test6   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test6
+    ProxyPassReverse /test6   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test6
+        ProxyPass       /test7   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test7
+    ProxyPassReverse /test7   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test7
+        ProxyPass       /test8   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test8
+    ProxyPassReverse /test8   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test8
+ ProxyPass       /test9   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test9
+    ProxyPassReverse /test9   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test9
+        ProxyPass       /test10   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test10
+    ProxyPassReverse /test10   http://sdonat5.ad.local/pls/EAI_DONUT/test_i1.test10
+
+
+
+
+I tryed to ping mail server from prod server eventusa 172.17.66.53 po portu 25
+ali nisam uspio .
+
+
+pass za unzip template
+KWElZoN4O7E8zdV8hdAL
+
+
+dmatak/ZvrZvr123
+wwms dba produkcija
+
+
+promjena karata na produkciji, bilo je 
+http://172.16.129.173/maps
+
+
+novo stanje sa testa :
+http://10.240.145.63/eventus/
+
+pass za gmail  vkdarkomatak@gmail.com/Martin11))
+		darkomatak@gmail.com/Martin11))
+
+
+papac internet 9A869743
+
+kim
+1.	Instalirati Eclipse sa Java 1.8.0_121 – obavezno ova verzija Jave, objasnit ću zašto.
+2.	Instalirati SVN plug-in, kako bi mogli svi skupa raditi na istom kodu. Ako ne možete doći to vanjskih server-a, ja vam mogu postaviti site unutar HT-a (znam da je Vesna imala ovakvih problema).
+3.	Provjeriti da li vam radi link http://swwmsweb:57003/cwmpWeb/WGCPEMgt. Trebali bi dobiti stranicu na kojoj piše 'ACS emulator started'.
+4.	Provjeriti da li vam radi link http://wsat4770.ad.local:8088/svn/29. To je SVN repozitorij gdje ćemo commit-ati kod kad budemo radili. Ja ću vam kreirati accounte.
+5.	Tražiti propuštanje do stroja koji će biti KIM host, njegova IP adresa je 192.168.250.7. U attachment stavljam primjer kako sam ja tražio propuštanje. Morat ćete tražiti po IP adresi, jer su mi rekli da tako radi taj FW – predlažem da ne date adresu svog laptopa, nego nekog servera kojem uvijek imate pristup.
+dmatak/darko!89 usr/pass za repozitorij Krunin
+
+kartica 4318412006455592
+
+
+
+
+---------------------------------------------------------
+produkcija OTW-a
+10.240.154.98
+dmatak/Mojamalamarijana
+
+tomcat:
+sudo /sbin/service tomcat7050 stop
+..tu se mora sačekati da tomcat stvarno stane ... provjeriti sa tail -f /otwaprod/apache-tomcat-7.0.50/logs/catalina.out
+sudo /sbin/service tomcat7050 start
+
+apache:
+sudo /sbin/service httpd restart 
+
+
+potreban je restart apache servera i tomcat severa kao otw user sa sudo komandom.
+Imam negdje zapisano pa ti pošaljem (obično to izvučem na serveru sa history | grep service pa ne znam napamet)
+otw/hrovje123.
+
+https://etehnicar.t.ht.hr/OTW/#login:null
+---------------------------------------------------------
+
+
+passs vikipedija dmatak/Dmatzu6tz7uoo8 ili Martin!"#$%&/()= ili Martin11!"#$%&/()=
+
+pristup terastream https://wiki.dev.terastrm.net/
+
+
+yahoo.com vkdarkomatak Martin11"
+
+face vkdarkomatak@yahoo.com Martin11$
+darko.matak@gmail Martin11"
+
+vesna lozinka za stručni skup
+Korisničko ime: vesna.matak@skole.hr 
+Lozinka: c|ts!^7vvS_H(q
+
+skype vkdarkomatak / Martin11"
+
+linkedin darko.matak@ht.hr / Martin11""
+
+Aplikacija: Anyconnect VPN mobile
+Username: dmatak-ac
+Password: 5phufkRq
+
+dropbox
+darko.matak@ht.hr
+Martin11%%
+
+darko.matak@gmail.com postman
+Martin11##
+
+HRSUITE/Mojamalamarijana1
+
+otkup poljoprivrednih proizvoda
+https://webobrasci.dzs.hr/eSurveyPo/SharedPages/Kontakt.aspx
+02197081/Vnx7p9
+
+
+aliexpress
+darkomatak@gmail.com/Martin111
+
+git darkomatak@gmail.com/Martin11"
+
+****************************************kraj stosevi**************************************************************************
