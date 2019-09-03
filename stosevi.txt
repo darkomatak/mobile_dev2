@@ -1,4 +1,4 @@
-***********************************start native********************************************
+﻿***********************************start native********************************************
 ng new Demo2 --make new project in CLI 
 cd Demo2
 code . 		--otvaranje koda u visual code editoru 
@@ -106,6 +106,7 @@ org.darko.radnovrijeme
 
 
 ----------------apple id-------darko.matak@t.ht.hr/Martin11))----------------
+Vaš Apple ID je vkdarkomatak@yahoo.com/Martin11"
 Sigurnosno pitanje 1
 
 najbolji prijatelj iz skolskih dana 
@@ -225,11 +226,11 @@ rv_basic
 
 
 
-github
+github službeni git s licencama
 HT_dmatak, password dmatak1 
 https://gitlab-lxomldapv1t.dc.ht.hr/
 
-
+https://gitlab-lxomldapv1t.dc.ht.hr/users/sign_in
 
 produkcijski serveri
 ___________________________
@@ -320,6 +321,13 @@ admin/password je user/password za scdf pristup
  sudo systemctl restart scdf
 sudo systemctl restart nomad-consul
 
+1051   sudo systemctl restart   scdf
+ 1052   sudo systemctl restart kafka
+ 1053   sudo systemctl restart nomad-client
+ 1054   sudo systemctl restart zookeeper 
+ na koliko servera restartati , kada ?
+ 
+
 /opt/nomad-server/bin
 [dmatak@lxgrabapv4p bin]$
 ./nomad status
@@ -363,6 +371,7 @@ Interna HT Dev ekipa    -              camunda_dev/oICRlmqZ27QHiZRsOHO8GXTQe
 Interna HT Dev ekipa    -              analytics_dev/kBrF9a78ry6t3PywQmXn1JiIk
 
 
+spj_selfcare/spj.101
 spj_selfcare/spj.101
 
 ---camunda instalacija --------------
@@ -918,11 +927,6 @@ svirtwwmsweb.ad.local [10.240.134.122]
 
 
 
-fali u skripti ...
-gethelpdata
-acs
-mail
-uu
 
 
 
@@ -1248,11 +1252,7 @@ mtokenps 1235
 mytelekom portal za tim :
 395345 je korisnički broj za adsl  
 
-Korisnički podaci glavnog administratora
-Korisničko ime: admin@obrttimv 
-Email: timtimosiguranje@gmail.com 
-Broj mobitela: 38598348947
-Lozinka: Gh74Kts ili martin111
+
 
 
 
@@ -1456,7 +1456,7 @@ Lozinka: c|ts!^7vvS_H(q
 
 skype vkdarkomatak / Martin11"
 
-linkedin darko.matak@ht.hr / Martin11""
+linkedin darkomatak@gmail.com / Martin11")
 
 Aplikacija: Anyconnect VPN mobile
 Username: dmatak-ac
@@ -1481,4 +1481,99 @@ darkomatak@gmail.com/Martin111
 
 git darkomatak@gmail.com/Martin11"
 
+git pull --skida sve u lokalni direktorij
+git add ime file ....dodaje u index
+git commit -m "opis" ..pravi branch
+git push origin master ....stavlja sve skupa na remote direktorij
+
+lokalni git it u HT-u
+dmatak/dm#4455
+http://sdcbck01p:3000/user/login
+
 ****************************************kraj stosevi**************************************************************************
+****************************************si********************************************************
+postgres baza testna
+host: sgisappmp.ad.local
+port: 5432
+maintenance database: postgres
+
+
+u: dmteam
+p: dmteam#4
+
+Materpassword Martin11")
+
+                      "jdbc:postgresql://sgisappmp.ad.local:5432/si","dmteam","dmteam#4")){
+
+
+
+
+acs pristup dmatak/Martin11"
+					  
+*************************************kraj si***********************************************************
+**************************************oglasnik*******************************************
+darkomatak darkomatak@gmail.com pass Martin11"
+*************************************kraj oglanik***********************************************************
+
+
+
+
+	
+	
+	
+	bin/flume-ng agent -n agent_wwms --conf conf --conf-file conf/flume_wwms.conf &
+	
+	
+	
+	
+	
+	
+date format, error class, 
+
+
+51330955
+
+38521795
+
+
+0997060179 ljubo žižić
+
+http://172.17.60.128/wsDonatAccessProduction/TMWP_Donat.asmx
+
+
+
+
+ java -jar camproba-1.0-SNAPSHOT.jar hr.multicom.proactivecare.ProActiveCareApp --server.port=8150 --spring.profiles.active=ht-prod -Djava.security.krb5.conf=/etc/krb5.ini -Djava.security.auth.login.config=/home/camunda/keytab/kafka_jaas.conf
+ 
+ dominik asset :85216077
+ 
+
+ evet4 asset za testiranje 522612589
+ 522644848
+ 522645297
+ 
+
+
+"date": "2019-08-19T10:18:17.701Z" 
+
+
+./kafka-console-consumer.sh --bootstrap-server lxcdhkafkaph1p.dc.ht.hr:9092 --topic SELFCARE_SPJ_SCORE --consumer.config ../config/consumer.properties --from-beginning --max-messages 3
+
+
+---------------git primjeri --------------------
+1. novi git projekt prazan
+mkdir moj_projekt
+cd moj_projekt
+git init
+
+2. git status
+
+3.git reset HEAD -- <datoteka>  <datoteka>  izbacuje fileove iz indexy
+
+4. git add . dodaje sve u index
+5.git checkout HEAD <datoteka> izbacuje datoteku , zadnje izmjene
+6. git commit -m "komentar" sprema sve što je u indexu u branch
+7. git branch pokazuje koji sve branchevi postoje
+8. git branch novi_branch kreira novi branch
+9. git checkout novi_branch se prebacujemo na novu granu
+10.git branch -D novi_branch briše granu novi_branch
