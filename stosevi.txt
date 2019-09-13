@@ -355,6 +355,7 @@ psql -U camunda -W -h localhost -d camundadb -f "1-MFR_GRID_BASKET_standalone_tr
 
 \i postgres_identity_7.10.0.sql
 
+camunda produkcija
 
 psql "dbname='camundadb' user='selfcare' password='VLFj1h5HVZIYlAHrC2GyLvfZW' host='192.168.250.34'"
 
@@ -373,6 +374,27 @@ Interna HT Dev ekipa    -              analytics_dev/kBrF9a78ry6t3PywQmXn1JiIk
 
 spj_selfcare/spj.101
 spj_selfcare/spj.101
+
+
+
+pgsql master pass Martin11"
+camunda test
+psql "dbname='camundadb' user='selfcare' password='selfcareHTtest2tr025' host='172.17.79.235'"
+
+ili cmaunda:
+spring.datasource.username=camunda
+spring.datasource.password=camundaHTtest4tr839
+
+	testna camunda, password
+	PGPASSWORD=selfcareHTtest2tr025 psql -U selfcare -h lxgrabapv1t.dc.ht.hr -d camundadb < tab_state.sql
+
+	psql "dbname='camundadb' user='selfcare' password='selfcareHTtest2tr025' host='172.17.79.235'"
+
+state topic na camundi
+Exporti iz postgre DB za tab_state, 
+select * from selfcare.tab_state where state_date!='state_date' and dis_slot_port='dis_slot_port' order by state_date desc limit 300;
+select * from selfcare.tab_state where state_date!='state_date' and dis_slot_port!='dis_slot_port' order by state_date desc limit 300.
+
 
 ---camunda instalacija --------------
 
@@ -1577,3 +1599,61 @@ git init
 8. git branch novi_branch kreira novi branch
 9. git checkout novi_branch se prebacujemo na novu granu
 10.git branch -D novi_branch briše granu novi_branch
+11. git merge novi_branch dodaje sve iz experimentalne grane u master granu
+12. git log
+13. gitk pokazuje sve što se je događalo na gitu
+14. git reset --hard HEAD~1 vraća sve staro stanje s zadnjeg commita 
+-----------remote git priča stranica 96
+15. git clone git://https/haha/...git clonira repozitorij u aktivni direktorij i od sada imamo 2 lokalna brancha
+16. git fetch uzima podatke s udaljenog repozitorija na lokalni udaljeni repozitorij origin/master
+17. git checkout master ( prebacimo se na master lokalni )
+    git merge origin/master sprema s origin/master u naš lokalni master
+    kad smo na lokalnom masteru preuzimamo podatke s udaljenog git-a
+	git fetch
+	git merge origin/master 
+	zamjena za ovo je git pull, ove dvije naredbe u jednoj
+18.	git push origin master ----prebacivanje vlastitog mastera na remote master
+    ako postoji da je netko radio na udaljenom masteru tad se prvo to treba staviti u lokalni master pa onda merge 
+	git fetch ( uzmemo podatke s remote repozitorija na lokalni remote master)
+	git merge origin/master ( mergamo to što smo skinulu s lokalnim razvojem , lokalnim masterom )
+	git push origin master ( sve to sada pušamo na remote master )
+19. git push -f origin master ( sprema vlastite commmitane promjene s lokalnog mastera na remote master !! )
+20. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
