@@ -1,0 +1,65 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+
+
+    <ActionBar title="Izvještaj">
+
+    </ActionBar>
+    <StackLayout class="form">
+        <StackLayout horizontalAlignment="left">
+
+
+            <DatePicker year="{{ currentYear }}" month="{{ currentMonth }}"
+                day="{{ currentDay}}" minDate="2019-01-01" maxDate="2100-12-31"
+                visibility="{{ isEditing2 ? 'visible' : 'collapse' }}" />
+
+            <Button row="22" text="Preuzeti izvještaj ?" tap="buttonTap"
+                visibility="{{ isEditing2 ? 'visible' : 'collapse' }}" />
+        </StackLayout>
+
+
+
+
+        <GridLayout rows="400 200">
+            <ListView items="{{ myTitles }}" itemTap="onItemTap" loaded="{{ onListViewLoaded }}"
+                separatorColor="orangered" class="list-group-item" id="listView"
+                row="0" columns="*, auto">
+                <ListView.itemTemplate>
+                    <GridLayout class="container" rows="auto" columns="auto, *">
+                        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+
+                        <StackLayout row="0" col="0">
+                            <Label text="{{ title  }}" fontSize="12" />
+                        </StackLayout>
+                        <StackLayout row="0" col="60">
+                            <Label text="{{  total_hours2  }}" fontSize="12"
+                                horizontalAlignment="right" />
+                        </StackLayout>
+
+                    </GridLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+
+            <ListView items="{{ mySum }}" separatorColor="orangered" class="list-group-item"
+                id="listView" row="1" columns="*, auto">
+                <ListView.itemTemplate>
+                    <GridLayout class="container" rows="auto" columns="auto, *">
+                        <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+                        <StackLayout row="0" col="0">
+                            <Label text="{{'Ukupno ' + title  }}" fontSize="12"
+                                fontWeight="Bold" />
+                        </StackLayout>
+                        <StackLayout row="0" col="60">
+                            <Label text="{{  total_hours2 }}" fontSize="12"
+                                fontWeight="Bold" horizontalAlignment="right" />
+                        </StackLayout>
+                    </GridLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+        </GridLayout>
+
+
+    </StackLayout>
+
+</Page>

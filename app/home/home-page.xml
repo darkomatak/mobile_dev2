@@ -1,0 +1,46 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview"
+    loaded="onPageLoaded">
+
+    <ActionBar title="radnovrijeme.eu">
+
+        <ActionItem tap="onEdit" ios.systemIcon="2" android.systemIcon="ic_menu_edit"
+            ios.position="right" />
+
+
+
+
+    </ActionBar>
+
+    <StackLayout class="form">
+        <StackLayout horizontalAlignment="left">
+            <TextField class="input input-rounded m-t-6" hint="Gdje ?" text="{{ tfText }}"
+                visibility="{{ isEditing ? 'visible' : 'collapse' }}" />
+            <TextField class="input input-rounded m-t-6" hint="Što ?" text="{{ tfText2 }}"
+                visibility="{{ isEditing ? 'visible' : 'collapse' }}" />
+            <TextField class="input input-rounded m-t-6" hint="Rezultat ?"
+                text="{{ tfText3 }}" visibility="{{ isEditing ? 'collapse' : 'visible' }}" />
+
+
+
+
+
+        </StackLayout>
+
+
+        <GridLayout>
+
+            <ListView items="{{ myTitles }}" itemTap="onItemTap" loaded="{{ onListViewLoaded }}"
+                separatorColor="orangered" class="list-group" id="listView"
+                row="2">
+                <ListView.itemTemplate>
+                    <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+                    <StackLayout class="list-group-item">
+                        <Label text="{{ title  }}" class="btn btn-primary btn-rounded-sm" />
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+
+        </GridLayout>
+    </StackLayout>
+</Page>
