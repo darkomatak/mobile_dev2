@@ -1,4 +1,5 @@
-﻿***********************************start native********************************************
+﻿hahahhhahha
+***********************************start native********************************************
 ng new Demo2 --make new project in CLI 
 cd Demo2
 code . 		--otvaranje koda u visual code editoru 
